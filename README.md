@@ -1,3 +1,3 @@
 # Category-Splitting
 
-Details coming soon.
+Details are coming soon.
