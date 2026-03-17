@@ -114,15 +114,15 @@ video_path,label_index
 ```
 
 - **`ft_set.csv`**  
-  - Training samples for category splitting, derived from `train.csv` (if the method requires fine-grained supervision)  
-  - Samples from this coarse category, labeled with fine-grained category indices  
+  - Training samples from the coarse category corresponding to the folder name, derived from `train.csv`, labeled with fine-grained category indices
+  - Used for category splitting methods that require fine-grained supervision
 
 - **`equivalent_set.csv`**  
-  - Test samples from the same coarse category, derived from `test.csv`, labeled with fine-grained category indices  
+  - Test samples from the same coarse category, derived from `test.csv`, labeled with fine-grained category indices
   - Used to evaluate **generality** of the category splitting method  
 
 - **`unrelated_set.csv`**  
-  - Test samples from all the untouched categories, derived from `test.csv`  
+  - Test samples from all the untouched categories, derived from `test.csv`, with their original indices in `test.csv`
   - Used to evaluate **locality** of the category splitting method
 
 Fine-grained category indices in these files extend the label space defined in `label.json`, starting from the next available index (i.e., if the last index in `label.json` is N, these indices start from N+1)
