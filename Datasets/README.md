@@ -89,7 +89,7 @@ video_path,label_index
 
 They are used to train and evaluate a **mixed-granularity base model**, where coarse and fine-grained labels coexist. This base model serves as the starting point for category splitting task.
 
-We also provide pretrained **mixed-granularity base model** checkpoints at:  
+We also provide pretrained **mixed-granularity base model** checkpoints, fine-tuned from the MVD ViT-Small model [1] ([checkpoint](https://drive.google.com/file/d/1HqvGxx7_JYO5JKvRT0giesl-p-Iaaesa/view)), at:  
 [LINK]
 
 ---
@@ -132,3 +132,8 @@ Fine-grained category indices in these files extend the label space defined in `
 ## 📌 Citation
 
 If you use this dataset, please cite our paper.
+
+---
+## 📌 Reference
+
+[1] Wang, Rui, et al. "Masked video distillation: Rethinking masked feature modeling for self-supervised video representation learning." Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2023.
