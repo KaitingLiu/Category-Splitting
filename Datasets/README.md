@@ -69,71 +69,66 @@ File: `group_scheme.json`
 ```
 
 * `group_scheme`: mapping from **coarse → fine grained labels**
-* `A`, `B`: partition of coarse categories used for mixed training
+* `A`, `B`: partition of **coarse categories** into two complementary subsets, determining which categories are collapsed into coarse labels (splitting targets) in Dataset A and Dataset B
 
 ---
 
-## 🔀 Mixed-Granularity Labels
+## 🔀 Mixed-Granularity Datasets
 
-Each subset (`A/`, `B/`) contains:
+Each dataset (`A/`, `B/`) contains:
 
-### `label.json`
+File: `label.json`
 
 Mapping from **label name → index**
 
-### `train.csv / val.csv / test.csv`
-
-Format:
+File: `train.csv / val.csv / test.csv` has format:
 
 ```
 video_path,label_index
 ```
 
-* Labels are **mixed-granularity**
-* Active set → **coarse labels**
-* Others → **fine labels**
+They are used to train and evaluate a **mixed-granularity base model**, where coarse and fine-grained labels coexist. This base model serves as the starting point for category splitting task.
+
+We also provide pretrained **mixed-granularity base model** checkpoints at:  
+[LINK]
 
 ---
 
 ## 🎯 Category Splitting Evaluation
 
-Each coarse category has its own folder:
+Each dataset (`A/`, `B/`) also contains a folder for each coarse category:
 
 ```
 <coarse_label>/
-├── ft.csv
-├── equivalent.csv
-├── unrelated.csv
+├── ft_set.csv
+├── equivalent_set.csv
+├── unrelated_set.csv
 ```
 
 ### Files
 
-* **ft.csv**
+All files (`ft_set.csv`, `equivalent_set.csv`, `unrelated_set.csv`) follow the format:
 
-  * Training samples for splitting
-  * Fine-grained labels within the coarse group
+```
+video_path,label_index
+```
 
-* **equivalent.csv**
+- **`ft_set.csv`**  
+  - Training samples for category splitting, derived from `train.csv` (if the method requires fine-grained supervision)  
+  - Samples from this coarse category, labeled with fine-grained category indices  
 
-  * Test samples from the same coarse category
-  * Used to evaluate splitting performance
+- **`equivalent_set.csv`**  
+  - Test samples from the same coarse category, derived from `test.csv`, labeled with fine-grained category indices  
+  - Used to evaluate **generality** of the category splitting method  
 
-* **unrelated.csv**
+- **`unrelated_set.csv`**  
+  - Test samples from all the untouched categories, derived from `test.csv`  
+  - Used to evaluate **locality** of the category splitting method
 
-  * Test samples outside the group
-  * Used to evaluate robustness
-
----
-
-## 🔢 Label Indexing
-
-* Indices in splitting files **continue from** `label.json`
-* They extend the base model label space
+Fine-grained category indices in these files extend the label space defined in `label.json`, starting from the next available index (i.e., if the last index in `label.json` is N, these indices start from N+1)
 
 ---
 
 ## 📌 Citation
 
 If you use this dataset, please cite our paper.
-
----
