@@ -9,10 +9,16 @@ This repository provides the **label files and grouping schemes** for the catego
 ## 📚 Datasets
 
 * **SSv2-Split** (based on Something-Something V2 dataset [1])
-* **FineGym-Split** (based on FineGym288 dataset [2])
+* **FineGym-Split** (based on FineGym288 dataset [2])  
+  For Original FineGym288, some videos are missing and cannot be downloaded from the web. These missing samples are therefore not included in our dataset.
 
-Both datasets follow the same structure.
+  In the original FineGym288 labels ([original labels](https://sdolivia.github.io/FineGym/resources/dataset/gym288_categories.txt)), there are three groups of text labels that are exactly duplicated, differing only by their index:
 
+  - `(BB) salto backward tucked with 1 twist`: Clabels 180 and 216  
+  - `(BB) salto backward tucked`: Clabels 181 and 217  
+  - `(BB) salto backward stretched with 1 twist`: Clabels 185 and 222  
+
+  We kept only the data points with Clabels 216, 217, and 222, and also removed the others. Our dataset was then constructed based on the remaining samples.
 ---
 
 ## 🧠 Overview
