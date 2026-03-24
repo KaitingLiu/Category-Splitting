@@ -8,8 +8,8 @@ This repository provides the **label files and grouping schemes** for the catego
 
 ## 📚 Datasets
 
-* **SSv2-Split** (based on Something-Something V2 dataset)
-* **FineGym-Split** (based on FineGym288 dataset)
+* **SSv2-Split** (based on Something-Something V2 dataset [1])
+* **FineGym-Split** (based on FineGym288 dataset [2])
 
 Both datasets follow the same structure.
 
@@ -89,7 +89,7 @@ video_path,label_index
 
 They are used to train and evaluate a **mixed-granularity base model**, where coarse and fine-grained labels coexist. This base model serves as the starting point for category splitting task.
 
-We also provide pretrained **mixed-granularity base model** checkpoints, fine-tuned from the MVD ViT-Small model [1] ([mvd_s_from_l_ckpt_399.pth](https://drive.google.com/file/d/1HqvGxx7_JYO5JKvRT0giesl-p-Iaaesa/view)), at: [mixed-granularity base model checkpoints]()
+We also provide pretrained **mixed-granularity base model** checkpoints, fine-tuned from the MVD ViT-Small model [3] ([mvd_s_from_l_ckpt_399.pth](https://drive.google.com/file/d/1HqvGxx7_JYO5JKvRT0giesl-p-Iaaesa/view)), at: [mixed-granularity base model checkpoints]()
 
 ---
 
@@ -134,5 +134,6 @@ If you use this dataset, please cite our paper.
 
 ---
 ## 📌 Reference
-
-[1] Wang, Rui, et al. "Masked video distillation: Rethinking masked feature modeling for self-supervised video representation learning." Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2023.
+[1] Goyal, Raghav, et al. "The" something something" video database for learning and evaluating visual common sense." Proceedings of the IEEE international conference on computer vision. 2017.
+[2] Shao, Dian, et al. "Finegym: A hierarchical video dataset for fine-grained action understanding." Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2020.
+[3] Wang, Rui, et al. "Masked video distillation: Rethinking masked feature modeling for self-supervised video representation learning." Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2023.
