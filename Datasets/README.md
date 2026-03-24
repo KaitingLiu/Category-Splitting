@@ -46,7 +46,7 @@ Dataset/
 │   ├── group_scheme.json
 │   ├── A/
 │   │   ├── label.json
-│   │   ├── train.csv / val.csv / test.csv
+│   │   ├── train.csv / val.csv
 │   │   ├── <coarse_label>/
 │   │   │   ├── ft_set.csv
 │   │   │   ├── equivalent_set.csv
@@ -87,7 +87,7 @@ File: `label.json`
 
 Mapping from **label name → index**
 
-File: `train.csv / val.csv / test.csv` has format:
+File: `train.csv / val.csv` has format:
 
 ```
 video_path,label_index
@@ -123,11 +123,11 @@ video_path,label_index
   - Used for category splitting methods that require fine-grained supervision
 
 - **`equivalent_set.csv`**  
-  - Test samples from the same coarse category, derived from `test.csv`, labeled with fine-grained category indices
+  - Validation samples from the same coarse category, derived from val.csv`, labeled with fine-grained category indices
   - Used to evaluate **generality** of the category splitting method  
 
 - **`unrelated_set.csv`**  
-  - Test samples from all the untouched categories, derived from `test.csv`, with their original indices in `test.csv`
+  - Validation samples from all the untouched categories, derived from `val.csv`, with their original indices in `val.csv`
   - Used to evaluate **locality** of the category splitting method
 
 Fine-grained category indices in these files extend the label space defined in `label.json`, starting from the next available index (i.e., if the last index in `label.json` is N, these indices start from N+1)
