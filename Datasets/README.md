@@ -139,6 +139,15 @@ Fine-grained category indices in these files extend the label space defined in `
 
 If you use this dataset, please cite our paper.
 
+```bibtex
+@article{liu2026let,
+  title={Let's Split Up: Zero-Shot Classifier Edits for Fine-Grained Video Understanding},
+  author={Liu, Kaiting and Doughty, Hazel},
+  journal={arXiv preprint arXiv:2602.16545},
+  year={2026}
+}
+```
+
 ---
 ## 📌 Reference
 [1] Goyal, Raghav, et al. "The" something something" video database for learning and evaluating visual common sense." Proceedings of the IEEE international conference on computer vision. 2017.
