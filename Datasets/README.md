@@ -18,7 +18,7 @@ This repository provides the **label files and grouping schemes** for the catego
   - `(BB) salto backward tucked`: Clabels 181 and 217  
   - `(BB) salto backward stretched with 1 twist`: Clabels 185 and 222  
 
-  We kept only the data points with Clabels 216, 217, and 222, and also removed the others. Our dataset was then constructed based on the remaining samples.
+  We kept only the samples with Clabels 216, 217, and 222, and removed the others. Our dataset was then constructed based on the remaining samples.
 ---
 
 ## 🧠 Overview
