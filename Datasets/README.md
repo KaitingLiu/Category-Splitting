@@ -86,7 +86,7 @@ Each dataset (`A/`, `B/`) contains:
 
 File: `label.json`
 
-Mapping from **label name → index**
+Mapping from **text label → index**
 
 File: `train.csv / val.csv` has format:
 
