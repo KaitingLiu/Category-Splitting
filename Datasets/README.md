@@ -70,7 +70,7 @@ File: `group_scheme.json`
     "coarse_label_1": ["fine_grained_label_1", "fine_grained_label_2", ...],
     "coarse_label_2": ["fine_grained_label_3", "fine_grained_label_4", ...]
   },
-  "A": ["coarse_label_1", "coarse_label_2"],
+  "A": ["coarse_label_1", "coarse_label_2", ...],
   "B": [...]
 }
 ```
