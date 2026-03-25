@@ -67,9 +67,10 @@ File: `group_scheme.json`
 ```json
 {
   "group_scheme": {
-    "<coarse_label>": ["fine_grained_label_1", "fine_grained_label_2", ...]
+    "coarse_label_1": ["fine_grained_label_1", "fine_grained_label_2", ...],
+    "coarse_label_2": ["fine_grained_label_3", "fine_grained_label_4", ...]
   },
-  "A": [...],
+  "A": ["coarse_label_1", "coarse_label_2"],
   "B": [...]
 }
 ```
