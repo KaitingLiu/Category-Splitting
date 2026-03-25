@@ -124,7 +124,7 @@ video_path,label_index
   - Used for category splitting methods that require fine-grained supervision
 
 - **`equivalent_set.csv`**  
-  - Validation samples from the same coarse category, derived from val.csv`, labeled with fine-grained category indices
+  - Validation samples from the same coarse category, derived from `val.csv`, labeled with fine-grained category indices
   - Used to evaluate **generality** of the category splitting method  
 
 - **`unrelated_set.csv`**  
