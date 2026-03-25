@@ -102,7 +102,7 @@ We also provide pretrained **mixed-granularity base model** checkpoints, fine-tu
 
 ## 🎯 Category Splitting Evaluation
 
-Each dataset (`A/`, `B/`) also contains a folder for each coarse category used for category splitting evaluation:
+Each dataset (`A/`, `B/`) contains a folder for each coarse category, which is the splitting target, used for category splitting evaluation:
 
 ```
 <coarse_label>/
