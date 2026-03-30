@@ -1,28 +1,23 @@
-# 📦 Category Splitting Benchmark
+# Category Splitting Benchmark
 
 This repository provides the **label files and grouping schemes** for the category splitting benchmarks introduced in our paper *Let's Split Up: Zero-Shot Classifier Edits for Fine-Grained Video Understanding*.
 
-⚠️ **Note:** We do not redistribute raw videos. Please download the original datasets from their official sources.
+**Note:** We do not redistribute raw videos. Please download the original datasets from their official sources.
 
 ---
 
-## 📚 Datasets
+## Datasets Overview
+We construct our category splitting benchmark **SSv2-Split** and **FineGym-Split** based on two existing datasets (Something-Something V2 dataset [1] and FineGym288 dataset [2]).
 
-* **SSv2-Split** (based on Something-Something V2 dataset [1])
-* **FineGym-Split** (based on FineGym288 dataset [2])  
-  For Original FineGym288, some videos are missing and cannot be downloaded from the web. These missing samples are therefore not included in our dataset.
-
-  In the original FineGym288 labels ([original labels](https://sdolivia.github.io/FineGym/resources/dataset/gym288_categories.txt)), there are three groups of text labels that are exactly duplicated, differing only by their index:
+  For Original FineGym288, some videos are missing and cannot be downloaded from the web. These missing samples are therefore not included in our dataset. What's more, in the original FineGym288 labels ([original labels](https://sdolivia.github.io/FineGym/resources/dataset/gym288_categories.txt)), there are three groups of text labels that are exactly duplicated, differing only by their index:
 
   - `(BB) salto backward tucked with 1 twist`: Clabels 180 and 216  
   - `(BB) salto backward tucked`: Clabels 181 and 217  
   - `(BB) salto backward stretched with 1 twist`: Clabels 185 and 222  
 
-  We kept only the samples with Clabels 216, 217, and 222, and removed the others. Our dataset was then constructed based on the remaining samples.
----
-
-## 🧠 Overview
-We take SSv2-Split as an example below; FineGym-Split follows the same construction.
+  Therefore, we kept only the samples with Clabels 216, 217, and 222, and removed the others. Our dataset was then constructed based on the remaining samples.
+  
+We then take SSv2-Split as an example below to describe how we construct it; FineGym-Split follows the same construction.
 
 We reorganize the labels of the SSv2 dataset into a **coarse-to-fine structure**:
 
@@ -38,7 +33,7 @@ We then partition the **coarse categories** into two complementary subsets, A an
 
 ---
 
-## 📁 Structure
+## File Structure
 
 ```
 Dataset/
@@ -60,7 +55,7 @@ Dataset/
 
 ---
 
-## 🔑 Grouping Scheme
+## Grouping Scheme
 
 File: `group_scheme.json`
 
@@ -80,7 +75,7 @@ File: `group_scheme.json`
 
 ---
 
-## 🔀 Mixed-Granularity Datasets
+## Mixed-Granularity Datasets
 
 Each dataset (`A/`, `B/`) contains:
 
@@ -100,7 +95,7 @@ We also provide pretrained **mixed-granularity base model** checkpoints, fine-tu
 
 ---
 
-## 🎯 Category Splitting Evaluation
+## Category Splitting Evaluation
 
 Each dataset (`A/`, `B/`) contains a folder for each coarse category, which is the splitting target, used for category splitting evaluation:
 
@@ -135,7 +130,7 @@ Fine-grained category indices in these files extend the label space defined in `
 
 ---
 
-## 📌 Citation
+## Citation
 
 If you use this dataset, please cite our paper.
 
@@ -149,7 +144,7 @@ If you use this dataset, please cite our paper.
 ```
 
 ---
-## 📌 Reference
+## Reference
 [1] Goyal, Raghav, et al. "The" something something" video database for learning and evaluating visual common sense." Proceedings of the IEEE international conference on computer vision. 2017.
 
 [2] Shao, Dian, et al. "Finegym: A hierarchical video dataset for fine-grained action understanding." Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2020.
