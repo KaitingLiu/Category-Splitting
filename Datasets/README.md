@@ -7,15 +7,15 @@ This repository provides the **label files and grouping schemes** for the catego
 ---
 
 ## Datasets Overview
-We construct our category splitting benchmark **SSv2-Split** and **FineGym-Split** based on two existing datasets (Something-Something V2 dataset [1] and FineGym288 dataset [2]).
+We constructed our category splitting benchmark **SSv2-Split** and **FineGym-Split** based on two existing datasets (Something-Something V2 dataset [1] and FineGym288 dataset [2]).
 
-  For Original FineGym288, some videos are missing and cannot be downloaded from the web. These missing samples are therefore not included in our dataset. What's more, in the original FineGym288 labels ([original labels](https://sdolivia.github.io/FineGym/resources/dataset/gym288_categories.txt)), there are three groups of text labels that are exactly duplicated, differing only by their index:
+  For original FineGym288, some videos are missing and cannot be downloaded from the web. These missing samples are therefore not included in our dataset. What's more, in the original FineGym288 labels ([original labels](https://sdolivia.github.io/FineGym/resources/dataset/gym288_categories.txt)), there are three groups of text labels that are exactly duplicated, differing only by their index:
 
   - `(BB) salto backward tucked with 1 twist`: Clabels 180 and 216  
   - `(BB) salto backward tucked`: Clabels 181 and 217  
   - `(BB) salto backward stretched with 1 twist`: Clabels 185 and 222  
 
-  Therefore, we kept only the samples with Clabels 216, 217, and 222, and removed the others. Our dataset was then constructed based on the remaining samples.
+  We kept only the samples with Clabels 216, 217, and 222, and removed the others. Our dataset was then constructed based on the remaining samples.
   
 We then take SSv2-Split as an example below to describe how we construct it; FineGym-Split follows the same construction.
 
