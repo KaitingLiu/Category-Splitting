@@ -28,7 +28,7 @@ To use the benchmark, first download the video data:
 * <a href="https://sdolivia.github.io/FineGym/" target="_blank">FineGym288 video samples</a> [2]
 
 Then use our annotation files:
-* <a href="https://github.com/KaitingLiu/Category-Splitting/tree/main/Datasets" target="_blank">Annotation files</a>
+* <a href="https://github.com/KaitingLiu/Category-Splitting/tree/main/benchmark" target="_blank">Annotation files</a>
 
 ---
 
