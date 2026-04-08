@@ -24,35 +24,34 @@ The code is tested with CUDA 12.1.
 
 To use the benchmark, first download the video data:
 
-* [SSv2 video samples](https://www.qualcomm.com/developer/software/something-something-v-2-dataset) [1]
-* [FineGym288 video samples](https://sdolivia.github.io/FineGym/) [2]
+* <a href="https://www.qualcomm.com/developer/software/something-something-v-2-dataset" target="_blank">SSv2 video samples</a> [1]
+* <a href="https://sdolivia.github.io/FineGym/" target="_blank">FineGym288 video samples</a> [2]
 
 Then use our annotation files:
-
-* [Annotation files](https://github.com/KaitingLiu/Category-Splitting/tree/main/Datasets)
+* <a href="https://github.com/KaitingLiu/Category-Splitting/tree/main/Datasets" target="_blank">Annotation files</a>
 
 ---
 
 ## Reproducing Results
-To reproduce the results in the paper, first download the [mixed-granularity base models]().  
+To reproduce the results in the paper, first download the <a href="" target="_blank">mixed-granularity base models</a>.  
 These models are used as the starting point for all category splitting experiments.
 
 Before running the scripts, place the downloaded files in the following directories:
 
 Video data:
-- ./video/finegym/ for FineGym videos
-- ./video/ssv2/ for SSv2 videos
+* ./video/finegym/ for FineGym videos
+* ./video/ssv2/ for SSv2 videos
 Mixed-granularity base models:
-- ./checkpoints/ for all checkpoint files
+* ./checkpoints/ for all checkpoint files
 
 ### Table 2 (Comparative Zero-Shot Results)
 
 Run the scripts for:
 
-* [SSv2-Split-A]()
-* [SSv2-Split-B]()
-* [FineGym-Split-A]()
-* [FineGym-Split-B]()
+* <a href="" target="_blank">SSv2-Split-A</a>
+* <a href="" target="_blank">SSv2-Split-B</a>
+* <a href="" target="_blank">FineGym-Split-A</a>
+* <a href="" target="_blank">FineGym-Split-B</a>
 
 After all runs are completed, compute the average results:
 
@@ -69,7 +68,7 @@ python summery.py ./output/Table2/FineGym-Split-B/ma
 
 Run the script for:
 
-* [SSv2-Split-A]()
+* <a href="" target="_blank">SSv2-Split-A</a>
 
 After all runs are completed, compute the average results:
 
@@ -85,7 +84,7 @@ python summery.py ./output/Table3/SSv2-Split-A/ma
 
 For the last three rows (results for different initialization methods), run the script for:
 
-* [SSv2-Split-A]()
+* <a href="" target="_blank">SSv2-Split-A</a>
 
 After all runs are completed, compute the average results:
 
@@ -115,5 +114,3 @@ If you use this dataset, please cite our paper.
 [1] Goyal, Raghav, et al. "The" something something" video database for learning and evaluating visual common sense." Proceedings of the IEEE international conference on computer vision. 2017.
 
 [2] Shao, Dian, et al. "Finegym: A hierarchical video dataset for fine-grained action understanding." Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2020.
-
-[3] Wang, Rui, et al. "Masked video distillation: Rethinking masked feature modeling for self-supervised video representation learning." Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2023.

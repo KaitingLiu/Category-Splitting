@@ -2,7 +2,10 @@
 
 This repository provides the **label files and grouping schemes** for the category splitting benchmarks introduced in our paper *Let's Split Up: Zero-Shot Classifier Edits for Fine-Grained Video Understanding*.
 
-**Note:** We do not redistribute raw videos. Please download the original datasets from their official sources.
+**Note:** This repository only provide the annotation files, we do not redistribute raw videos. Please download the video samples from the official sources:
+
+* <a href="https://www.qualcomm.com/developer/software/something-something-v-2-dataset" target="_blank">SSv2 video samples</a>
+* <a href="https://sdolivia.github.io/FineGym/" target="_blank">FineGym288 video samples</a>
 
 ---
 
@@ -91,7 +94,7 @@ video_path,label_index
 
 They are used to train and evaluate a **mixed-granularity base model**, where coarse and fine-grained labels coexist. This base model serves as the starting point for category splitting task.
 
-We also provide **mixed-granularity base model** checkpoints, fine-tuned from the MVD ViT-Small model [3] ([mvd_s_from_l_ckpt_399.pth](https://drive.google.com/file/d/1HqvGxx7_JYO5JKvRT0giesl-p-Iaaesa/view)), at: [mixed-granularity base model checkpoints](https://github.com/KaitingLiu/Category-Splitting/releases/tag/v1.0)
+We also provide **mixed-granularity base model** checkpoints, fine-tuned from the MVD ViT-Small model [3] (<a href="https://drive.google.com/file/d/1HqvGxx7_JYO5JKvRT0giesl-p-Iaaesa/view" target="_blank">mvd_s_from_l_ckpt_399.pth</a>), at: <a href="" target="_blank">mixed-granularity base models</a>
 
 ---
 
