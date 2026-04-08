@@ -49,7 +49,7 @@ COARSE_LABELS=(
 SEEDS=(0 1 2)
 
 # ===== loop =====
-for weight_init in "$WEIGHT_INITS[@]}"; do
+for weight_init in "${WEIGHT_INITS[@]}"; do
   for coarse_label in "${COARSE_LABELS[@]}"; do
     for seed in "${SEEDS[@]}"; do
 

@@ -25,7 +25,7 @@ The code is tested with CUDA 12.1.
 To use the benchmark, first download the video data:
 
 * <a href="https://www.qualcomm.com/developer/software/something-something-v-2-dataset" target="_blank">SSv2 video samples</a> [1]
-* <a href="https://sdolivia.github.io/FineGym/" target="_blank">FineGym288 video samples</a> [2]
+* <a href="https://sdolivia.github.io/FineGym/" target="_blank">FineGym video samples</a> [2]
 
 Then use our annotation files:
 * <a href="https://github.com/KaitingLiu/Category-Splitting/tree/main/benchmark" target="_blank">Annotation files</a>
@@ -46,12 +46,13 @@ Mixed-granularity base models:
 
 ### Table 2 (Comparative Zero-Shot Results)
 
-Run the scripts for:
-
-* <a href="" target="_blank">SSv2-Split-A</a>
-* <a href="" target="_blank">SSv2-Split-B</a>
-* <a href="" target="_blank">FineGym-Split-A</a>
-* <a href="" target="_blank">FineGym-Split-B</a>
+Run the scripts:
+```bash
+./scripts/Table2-SSv2-Split-A.sh
+./scripts/Table2-SSv2-Split-B.sh
+./scripts/Table2-FineGym-Split-A.sh
+./scripts/Table2-FineGym-Split-B.sh
+```
 
 After all runs are completed, compute the average results:
 
@@ -66,9 +67,11 @@ python summery.py ./output/Table2/FineGym-Split-B/ma
 
 ### Table 3 (Zero-Shot Ablation)
 
-Run the script for:
+Run the script:
 
-* <a href="" target="_blank">SSv2-Split-A</a>
+```bash
+./scripts/Table3-SSv2-Split-A.sh
+```
 
 After all runs are completed, compute the average results:
 
@@ -82,9 +85,11 @@ python summery.py ./output/Table3/SSv2-Split-A/ma
 
 ### Table 4 (One-Shot Finetuning Ablation)
 
-For the last three rows (results for different initialization methods), run the script for:
+For the last three rows (results for different initialization methods), run the script:
 
-* <a href="" target="_blank">SSv2-Split-A</a>
+```bash
+./scripts/Table4-SSv2-Split-A.sh
+```
 
 After all runs are completed, compute the average results:
 

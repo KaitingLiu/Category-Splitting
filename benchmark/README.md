@@ -5,14 +5,14 @@ This repository provides the **label files and grouping schemes** for the catego
 **Note:** This repository only provide the annotation files, we do not redistribute raw videos. Please download the video samples from the official sources:
 
 * <a href="https://www.qualcomm.com/developer/software/something-something-v-2-dataset" target="_blank">SSv2 video samples</a>
-* <a href="https://sdolivia.github.io/FineGym/" target="_blank">FineGym288 video samples</a>
+* <a href="https://sdolivia.github.io/FineGym/" target="_blank">FineGym video samples</a>
 
 ---
 
 ## Datasets Overview
-We constructed our category splitting benchmark **SSv2-Split** and **FineGym-Split** based on two existing datasets (Something-Something V2 dataset [1] and FineGym288 dataset [2]).
+We constructed our category splitting benchmark **SSv2-Split** and **FineGym-Split** based on two existing datasets (Something-Something V2 dataset [1] and FineGym dataset [2]).
 
-  For original FineGym288, some videos are missing and cannot be downloaded from the web. These missing samples are therefore not included in our dataset. What's more, in the original FineGym288 labels ([original labels](https://sdolivia.github.io/FineGym/resources/dataset/gym288_categories.txt)), there are three groups of text labels that are exactly duplicated, differing only by their index:
+  For original FineGym, some videos are missing and cannot be downloaded from the web. These missing samples are therefore not included in our dataset. What's more, in the original FineGym288 labels ([original labels](https://sdolivia.github.io/FineGym/resources/dataset/gym288_categories.txt)), there are three groups of text labels that are exactly duplicated, differing only by their index:
 
   - `(BB) salto backward tucked with 1 twist`: Clabels 180 and 216  
   - `(BB) salto backward tucked`: Clabels 181 and 217  
