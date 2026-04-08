@@ -63,8 +63,6 @@ python summery.py ./output/Table2/FineGym-Split-A/ma
 python summery.py ./output/Table2/FineGym-Split-B/ma
 ```
 
----
-
 ### Table 3 (Zero-Shot Ablation)
 
 Run the script:
@@ -80,8 +78,6 @@ python summery.py ./output/Table3/SSv2-Split-A/vlm
 python summery.py ./output/Table3/SSv2-Split-A/mr
 python summery.py ./output/Table3/SSv2-Split-A/ma
 ```
-
----
 
 ### Table 4 (One-Shot Finetuning Ablation)
 
