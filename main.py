@@ -77,7 +77,7 @@ def main():
     parser.add_argument("--coarse_grained_text_label", type=str, default="", help="text label of the coarse class which will be splited later")
     parser.add_argument("--modifiers_in_base_model", type=str, help="file about the modifiers in the original base model.")
     parser.add_argument("--modifiers_for_new_classes", type=str, help="file about the modifiers for new fine-grained classes.")
-    parser.add_argument("--dropout_p", type=float, default=0.25, help="dropout rate before classification head and after backbone") # TODO：这个可能可以删掉
+    parser.add_argument("--dropout_p", type=float, default=0.25, help="dropout rate before classification head and after backbone")
     # other
     parser.add_argument("--device", type=str, default="cuda", help="device.")
     parser.add_argument("--output_dir",  type=str, default="./outputs", help="dir for saving all the output file.")

@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --partition=gpu_a100
-#SBATCH --time=4:00:00
+#SBATCH --time=2:00:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --gres=gpu:a100:1
@@ -24,7 +24,7 @@ module purge
 module load 2023
 module load CUDA/12.1.1
 
-/home/kliu1/data1/conda/envs/category-splitting/bin/python main.py \
+/home/kliu1/data1/conda/envs/category-splitting-test/bin/python main.py \
         --model $model \
         --checkpoint $checkpoint \
         --dataset $dataset \

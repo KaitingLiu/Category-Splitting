@@ -138,11 +138,12 @@ Fine-grained category indices in these files extend the label space defined in `
 If you use this dataset, please cite our paper.
 
 ```bibtex
-@article{liu2026let,
+@article{Liu2026Let,
   title={Let's Split Up: Zero-Shot Classifier Edits for Fine-Grained Video Understanding},
   author={Liu, Kaiting and Doughty, Hazel},
-  journal={arXiv preprint arXiv:2602.16545},
-  year={2026}
+  journal={International Conference on Learning Representations (ICLR)},
+  year={2026},
+  url={https://kaitingliu.github.io/Category-Splitting/}
 }
 ```
 
