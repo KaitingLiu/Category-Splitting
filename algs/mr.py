@@ -12,7 +12,7 @@ class MR(Editor):
     def __init__(self, model, alg, device, output_dir, args, alg_args):
         super().__init__(model, alg, device, output_dir, args)
         # load the existing modifier knowledge
-        with open(alg_args.modifiers_in_base_model, 'r') as f:
+        with open(args.modifiers_in_base_model, 'r') as f:
             self.modifiers_in_base_model = json.load(f)
         # load the text model
         self.text_model_name = alg_args.init_args.text_model.upper()

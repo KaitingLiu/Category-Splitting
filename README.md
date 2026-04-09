@@ -6,7 +6,7 @@
 For running the code, download this reprository and create the environment:
 
 ```bash
-conda create -n category-splitting python=3.10
+conda create -n category-splitting python=3.10.18
 conda activate category-splitting
 ```
 
@@ -16,7 +16,7 @@ Then install packages:
 pip install -r requirements.txt
 ```
 
-The code is tested with CUDA 12.1.
+The code is tested with CUDA 12.1.1.
 
 ---
 

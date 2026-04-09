@@ -46,7 +46,7 @@ COARSE_LABELS=(
         "Something colliding with something"
         )
 
-SEEDS=(0 1 2)
+SEEDS=(0 1 2 3 4 5)
 
 # ===== loop =====
 for weight_init in "${WEIGHT_INITS[@]}"; do
