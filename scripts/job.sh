@@ -24,7 +24,7 @@ module purge
 module load 2023
 module load CUDA/12.1.1
 
-/home/kliu1/data1/conda/envs/category-splitting-test/bin/python main.py \
+python main.py \
         --model $model \
         --checkpoint $checkpoint \
         --dataset $dataset \
