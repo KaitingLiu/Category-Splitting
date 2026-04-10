@@ -48,6 +48,8 @@ Video data:
 Mixed-granularity base models:
 * ./checkpoints/ for all checkpoint files
 
+Due to computational resource constraints, we resize the original FineGym videos from 1920×1080 to 480×270. To reproduce our results, please apply the same resizing to the videos.
+
 ### Comparative Zero-Shot Results (Table 2)
 
 To reproduce the category splitting evaluation results of our method (modifier alignment) for the four benchmarks (SSv2-Split-A, SSv2-Split-B, FineGym-Split-A, and FineGym-Split-B), we first run these four scripts. Each script evaluates the splitting of all corresponding coarse-grained categories in the benchmark with three random seeds.
