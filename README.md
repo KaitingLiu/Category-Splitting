@@ -37,7 +37,7 @@ Then use our annotation files:
 ---
 
 ## Reproducing Results
-To reproduce the results in the paper, first download the <a href="" target="_blank">mixed-granularity base models</a>. These models are used as the starting point for all category splitting experiments.
+To reproduce the results in the paper, first download the <a href="https://drive.google.com/drive/folders/16djNLmTKiTQ-Rn5_f1h1uAjTECNWRKsl?usp=sharing" target="_blank">mixed-granularity base models</a>. These models are used as the starting point for all category splitting experiments.
 
 Before running the scripts, place the downloaded files in the following directories:
 
