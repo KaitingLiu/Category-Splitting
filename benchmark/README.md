@@ -94,7 +94,7 @@ video_path,label_index
 
 They are used to train and evaluate a **mixed-granularity base model**, where coarse and fine-grained labels coexist. This base model serves as the starting point for category splitting task.
 
-We also provide **mixed-granularity base model** checkpoints, fine-tuned from the MVD ViT-Small model [3] (<a href="https://drive.google.com/file/d/1HqvGxx7_JYO5JKvRT0giesl-p-Iaaesa/view" target="_blank">mvd_s_from_l_ckpt_399.pth</a>), at: <a href="" target="_blank">mixed-granularity base models</a>
+We also provide **mixed-granularity base model** checkpoints, fine-tuned from the MVD ViT-Small model [3] (<a href="https://drive.google.com/file/d/1HqvGxx7_JYO5JKvRT0giesl-p-Iaaesa/view" target="_blank">mvd_s_from_l_ckpt_399.pth</a>), at: <a href="https://drive.google.com/drive/folders/16djNLmTKiTQ-Rn5_f1h1uAjTECNWRKsl?usp=sharing" target="_blank">mixed-granularity base models</a>
 
 ---
 
